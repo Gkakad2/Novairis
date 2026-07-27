@@ -347,7 +347,7 @@ This project is developed solely for educational and research purposes and is no
 
 # Author
 
-## Gayatri Kakade
+## Gayatri Kakad
 
 Project Engineer • Cybersecurity • Endpoint Detection & Response • Python • React • Flask • Linux
 
