@@ -109,7 +109,7 @@ Unlike traditional log viewers, NOVAIRIS focuses on behavioral monitoring, endpo
 
 <p align="center">
 
-<img src="docs/screenshots/Light-Mode.png" width="90%">
+<img src="docs/screenshots/Light-mode.png" width="90%">
 
 </p>
 
