@@ -1,178 +1,165 @@
-# NOVAIRIS
-
 <div align="center">
 
-# Next-Generation Open Virtual AI Response & Incident Security Platform
+# NOVAIRIS
 
-*A lightweight Endpoint Detection & Response (EDR) platform for real-time endpoint monitoring, behavioral threat detection, incident response, asset management, and SOC operations.*
+### Next-Generation Open Virtual AI Response & Incident Security Platform
+
+Real-time Endpoint Detection & Response (EDR) platform for behavioral threat detection, endpoint monitoring, incident response, asset management, and Security Operations Center (SOC) visualization.
+
+---
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
-![Flask](https://img.shields.io/badge/Flask-3.x-black?logo=flask)
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
-![Vite](https://img.shields.io/badge/Vite-Frontend-646CFF?logo=vite)
+![Flask](https://img.shields.io/badge/Flask-Backend-black?logo=flask)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react)
+![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite)
-![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-red)
-![License](https://img.shields.io/badge/License-MIT-green)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-red)
+![License](https://img.shields.io/badge/License-MIT-success)
 
 </div>
 
 ---
 
+# Dashboard Preview
+
+<p align="center">
+
+<img src="docs/screenshots/dashboard.png" width="95%">
+
+</p>
+
+---
+
 # Overview
 
-NOVAIRIS is a modern Endpoint Detection and Response (EDR) platform developed to demonstrate the core capabilities of enterprise-grade security monitoring solutions.
+NOVAIRIS is a lightweight Endpoint Detection and Response (EDR) platform developed to demonstrate modern Security Operations Center (SOC) capabilities.
 
-The platform continuously monitors endpoints, collects telemetry, detects behavioral anomalies, generates incidents, maps threats to the MITRE ATT&CK framework, and visualizes security information through an interactive Security Operations Center (SOC) dashboard.
+The platform continuously collects endpoint telemetry, detects behavioral anomalies, generates incidents, correlates findings with the MITRE ATT&CK framework, and provides analysts with an interactive web-based dashboard for monitoring and response.
 
-Designed with modularity and scalability in mind, NOVAIRIS provides a lightweight yet extensible architecture suitable for cybersecurity research, academic projects, and SOC demonstrations.
-
----
-
-# Features
-
-## Endpoint Monitoring
-
-- Real-time endpoint heartbeat
-- Online / Offline host monitoring
-- Host inventory
-- Operating System identification
-- Kernel version tracking
-- Last seen monitoring
-- Endpoint telemetry collection
+Unlike traditional log viewers, NOVAIRIS focuses on behavioral monitoring, endpoint visibility, incident correlation, and threat intelligence through an intuitive security dashboard.
 
 ---
 
-## Asset Management
+# Key Features
 
-- Centralized asset inventory
-- Live host monitoring
-- Resource utilization
-- Host search
-- Dynamic filtering
-- Host deletion
-- Detailed asset information
+| Module | Description |
+|---------|-------------|
+| Endpoint Monitoring | Real-time endpoint heartbeat, host availability and telemetry |
+| Asset Management | Centralized inventory, live endpoint status, search and filtering |
+| Process Monitoring | Running processes, CPU, memory, ownership and command tracking |
+| Behavioral Detection | Rule-based anomaly detection engine |
+| Incident Response | Automatic incident generation with severity classification |
+| Threat Intelligence | MITRE ATT&CK mapping and threat scoring |
+| Analytics | Security statistics and resource utilization |
+| SOC Dashboard | Interactive visualization of security posture |
 
 ---
 
-## Incident Detection
+# Screenshots
 
-- Behavioral detection engine
-- Rule-based detection
-- Automatic incident generation
-- Severity classification
-- Incident lifecycle management
-- Live incident feed
+## Dashboard
+
+<p align="center">
+<img src="docs/screenshots/dashboard.png" width="90%">
+</p>
+
+---
+
+## Assets
+
+<p align="center">
+
+<img src="docs/screenshots/assets.png" width="48%">
+
+<img src="docs/screenshots/asset_details.png" width="48%">
+
+</p>
+
+---
+
+## Incidents
+
+<p align="center">
+
+<img src="docs/screenshots/incidents.png" width="48%">
+
+<img src="docs/screenshots/threat_feed.png" width="48%">
+
+</p>
 
 ---
 
 ## Threat Intelligence
 
-- Threat score calculation
-- MITRE ATT&CK mapping
-- Threat severity visualization
-- Top MITRE techniques
-- Security posture overview
+<p align="center">
+
+<img src="docs/screenshots/threat_intelligence.png" width="48%">
+
+<img src="docs/screenshots/top_mitre.png" width="48%">
+
+</p>
 
 ---
 
-## Process Monitoring
+## Settings
 
-Collects
+<p align="center">
 
-- Running processes
-- CPU usage
-- Memory usage
-- Process owner
-- Process command
-- Process ID
+<img src="docs/screenshots/settings.png" width="90%">
 
-Automatically detects
-
-- Newly started processes
-- Behavioral drift
-- Suspicious processes
-- Unknown executables
-
----
-
-## Dashboard
-
-Interactive SOC Dashboard including
-
-- Security Overview
-- Live Threat Feed
-- Incident Summary
-- Threat Intelligence
-- Host Resource Monitoring
-- Asset Inventory
-- MITRE ATT&CK Statistics
-- Analytics
-- Settings
+</p>
 
 ---
 
 # Architecture
 
+<p align="center">
+
+<img src="docs/screenshots/architecture.png" width="90%">
+
+</p>
+
+---
+
+# Detection Workflow
+
 ```text
-                    +----------------------+
-                    |    Client Agent      |
-                    | Endpoint Collector   |
-                    +----------+-----------+
-                               |
-                     Heartbeat / Telemetry
-                               |
-                               ▼
-                  +------------------------+
-                  |      Flask REST API    |
-                  +-----------+------------+
-                              |
-          +-------------------+-------------------+
-          |                                       |
-          ▼                                       ▼
-   Detection Engine                       SQLite Database
-          |                                       |
-          ▼                                       ▼
- Incident Generation                    Asset & Process Data
-          |
-          ▼
- Threat Intelligence Engine
-          |
-          ▼
-   React SOC Dashboard
+Client Endpoint
+      │
+      ▼
+Heartbeat + Telemetry
+      │
+      ▼
+Flask REST API
+      │
+      ▼
+SQLite Database
+      │
+      ▼
+Detection Engine
+      │
+      ▼
+Incident Generation
+      │
+      ▼
+Threat Intelligence
+      │
+      ▼
+React SOC Dashboard
 ```
 
 ---
 
 # Technology Stack
 
-## Frontend
-
-- React
-- Vite
-- Tailwind CSS
-- Lucide React
-- JavaScript
-
----
-
-## Backend
-
-- Python
-- Flask
-- SQLAlchemy
-- SQLite
-- Flask-CORS
-
----
-
-## Security Components
-
-- Endpoint Detection & Response
-- Behavioral Detection
-- MITRE ATT&CK Mapping
-- Incident Correlation
-- Threat Intelligence
-- Rule-Based Detection
+| Layer | Technologies |
+|--------|--------------|
+| Frontend | React, Vite, Tailwind CSS, Lucide React |
+| Backend | Python, Flask |
+| Database | SQLite, SQLAlchemy |
+| Security | MITRE ATT&CK, Behavioral Detection Engine |
+| Communication | REST APIs |
+| Endpoint | Python Agent |
 
 ---
 
@@ -182,165 +169,72 @@ Interactive SOC Dashboard including
 Novairis
 │
 ├── api/
-│   ├── server.py
-│   ├── dashboard.py
-│
+├── collectors/
 ├── dashboard/
 │   └── frontend/
-│
-├── detector/
-│
-├── collectors/
-│
-├── services/
-│
 ├── database/
-│
-├── rules/
-│
+├── detector/
 ├── docs/
-│
-├── screenshots/
-│
+│   └── screenshots/
+├── rules/
+├── services/
 ├── requirements.txt
-│
 └── osvf.db
 ```
 
 ---
 
-# Dashboard Modules
+# REST APIs
 
-- Dashboard
-- Assets
-- Incidents
-- Threat Intelligence
-- Analytics
-- Settings
-
----
-
-# Detection Workflow
-
-```text
-Endpoint Agent
-      │
-      ▼
-Collect Telemetry
-      │
-      ▼
-Store in Database
-      │
-      ▼
-Detection Engine
-      │
-      ▼
-Generate Incident
-      │
-      ▼
-MITRE ATT&CK Mapping
-      │
-      ▼
-SOC Dashboard Visualization
-```
-
----
-
-# REST API
-
-## Dashboard APIs
+## Dashboard
 
 ```
 GET /dashboard/summary
-
 GET /dashboard/resources
-
 GET /dashboard/threat-feed
-
 GET /dashboard/threat-intelligence
-
 GET /dashboard/top-mitre
 ```
 
 ---
 
-## Asset APIs
+## Assets
 
 ```
 GET /assets
-
 GET /assets/summary
-
 GET /assets/hosts
-
 DELETE /hosts/<hostname>
 ```
 
 ---
 
-## Incident APIs
+## Incidents
 
 ```
 GET /incidents
-
 GET /dashboard/incidents
-
 GET /incidents/<id>
 ```
 
 ---
 
-## Process APIs
+## Processes
 
 ```
 GET /processes
-
 GET /timeline/<hostname>
-
-GET /hunt/process/<name>
-
+GET /hunt/process/<process>
 GET /hunt/command/<keyword>
 ```
 
 ---
 
-## Endpoint APIs
+## Endpoint
 
 ```
 POST /heartbeat
 ```
-
----
-
-# Screenshots
-
-## Dashboard
-
-> Add Dashboard Screenshot Here
-
----
-
-## Assets
-
-> Add Assets Screenshot Here
-
----
-
-## Incidents
-
-> Add Incidents Screenshot Here
-
----
-
-## Threat Intelligence
-
-> Add Threat Intelligence Screenshot Here
-
----
-
-## Settings
-
-> Add Settings Screenshot Here
 
 ---
 
@@ -368,7 +262,7 @@ pip install -r requirements.txt
 python api/server.py
 ```
 
-Backend runs on
+Runs on
 
 ```
 http://localhost:5000
@@ -386,7 +280,7 @@ npm install
 npm run dev
 ```
 
-Frontend runs on
+Runs on
 
 ```
 http://localhost:5173
@@ -397,63 +291,46 @@ http://localhost:5173
 # Current Capabilities
 
 - Endpoint Monitoring
-- Asset Inventory
+- Host Inventory
+- Asset Management
+- Behavioral Detection
 - Process Monitoring
 - Incident Detection
-- Behavioral Threat Detection
+- Threat Intelligence
 - MITRE ATT&CK Mapping
-- Threat Intelligence
 - Interactive SOC Dashboard
-- REST APIs
 - Auto Refresh
-- Search & Filtering
-- Host Management
+- REST APIs
+- Host Search & Filtering
 
 ---
 
-# Future Enhancements
+# Roadmap
 
-- Windows Endpoint Agent
-- Linux Background Service
-- IOC Feed Integration
-- YARA Rule Support
-- Sigma Rule Support
-- Malware Hash Detection
-- CVE Intelligence
-- JWT Authentication
-- Role-Based Access Control
-- Email Notifications
-- Docker Deployment
-- Kubernetes Deployment
-- PostgreSQL Support
-- Elasticsearch Integration
-- Wazuh Integration
-- Sysmon Integration
-- AI-Assisted Threat Hunting
-
----
-
-# Learning Outcomes
-
-This project demonstrates practical implementation of
-
-- Endpoint Detection & Response (EDR)
-- Security Operations Center (SOC)
-- Behavioral Threat Detection
-- Incident Response
-- Threat Intelligence
-- MITRE ATT&CK Framework
-- REST API Development
-- React Frontend Development
-- Flask Backend Development
-- SQLAlchemy ORM
-- Python Security Automation
+- [x] Endpoint Monitoring
+- [x] Asset Inventory
+- [x] Process Monitoring
+- [x] Incident Detection
+- [x] Threat Intelligence
+- [x] MITRE ATT&CK Mapping
+- [x] Interactive Dashboard
+- [ ] Windows Endpoint Agent
+- [ ] YARA Rule Integration
+- [ ] Sigma Rule Support
+- [ ] IOC Feed Integration
+- [ ] CVE Intelligence
+- [ ] Email Notifications
+- [ ] PostgreSQL Support
+- [ ] Elasticsearch Integration
+- [ ] Docker Deployment
+- [ ] Kubernetes Deployment
+- [ ] AI Assisted Threat Hunting
 
 ---
 
 # Inspiration
 
-NOVAIRIS is inspired by modern enterprise Endpoint Detection and Response (EDR) and Security Operations Center (SOC) platforms including:
+NOVAIRIS draws inspiration from modern Endpoint Detection and Response (EDR) and Security Operations Center (SOC) platforms including:
 
 - Microsoft Defender for Endpoint
 - CrowdStrike Falcon
@@ -464,17 +341,19 @@ NOVAIRIS is inspired by modern enterprise Endpoint Detection and Response (EDR) 
 - Splunk Enterprise Security
 - LimaCharlie
 
-This project is developed for educational and research purposes and is **not affiliated with or endorsed by any of the above products or organizations**.
+This project is developed solely for educational and research purposes and is not affiliated with any of the above products.
 
 ---
 
 # Author
 
-**Gayatri Kakade**
+## Gayatri Kakade
 
-Project Engineer | Cybersecurity | Endpoint Detection & Response | Python | React | Flask | Linux
+Project Engineer • Cybersecurity • Endpoint Detection & Response • Python • React • Flask • Linux
 
-GitHub: https://github.com/Gkakad2
+GitHub
+
+https://github.com/Gkakad2
 
 ---
 
@@ -484,6 +363,8 @@ This project is licensed under the MIT License.
 
 ---
 
-## ⭐ Support
+<div align="center">
 
-If you found this project useful, consider giving it a **⭐ Star** on GitHub to support its development.
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+</div>
