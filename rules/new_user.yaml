@@ -1,0 +1,16 @@
+id: DET-001
+
+title: New Local User Created
+
+description: Detects creation of new Linux local users.
+
+severity: High
+
+mitre:
+  - T1136.001
+
+category: Persistence
+
+target: users
+
+condition: added

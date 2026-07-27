@@ -1,0 +1,16 @@
+id: DET-002
+
+title: New Running Service
+
+description: Detects newly running Linux services.
+
+severity: Medium
+
+mitre:
+  - T1543
+
+category: Persistence
+
+target: services
+
+condition: added

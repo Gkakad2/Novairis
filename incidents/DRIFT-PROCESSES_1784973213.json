@@ -1,0 +1,10 @@
+{
+    "timestamp": "2026-07-25T09:53:33.119384+00:00",
+    "hostname": "novairis-client",
+    "rule_id": "DRIFT-PROCESSES",
+    "title": "New Process Detected",
+    "severity": "Medium",
+    "mitre": "Behavioral",
+    "category": "processes",
+    "evidence": "/bin/sh /usr/lib/apt/apt.systemd.daily lock_is_held update"
+}

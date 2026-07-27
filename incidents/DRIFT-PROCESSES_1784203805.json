@@ -1,0 +1,10 @@
+{
+    "timestamp": "2026-07-16T12:10:05.310193+00:00",
+    "hostname": "client",
+    "rule_id": "DRIFT-PROCESSES",
+    "title": "New Process Detected",
+    "severity": "Medium",
+    "mitre": "Behavioral",
+    "category": "processes",
+    "evidence": "/usr/libexec/fwupd/fwupd"
+}

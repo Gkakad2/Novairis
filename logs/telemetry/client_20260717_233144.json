@@ -1,0 +1,1700 @@
+{
+    "system": {
+        "hostname": "client",
+        "ip_address": "10.175.1.204",
+        "os": "Linux",
+        "os_version": "#65-Ubuntu SMP PREEMPT_DYNAMIC Mon May 19 17:15:03 UTC 2025",
+        "platform": "Linux-6.8.0-62-generic-x86_64-with-glibc2.39",
+        "kernel": "6.8.0-62-generic",
+        "architecture": "x86_64",
+        "boot_time": "2026-07-03 05:46:22",
+        "collection_time": "2026-07-17 23:31:44 UTC",
+        "cpu_usage": 26.0,
+        "memory_usage": 16.0,
+        "disk_usage": 14.7,
+        "load_average": {
+            "1min": 1.0,
+            "5min": 1.0,
+            "15min": 1.0
+        }
+    },
+    "processes": [
+        {
+            "pid": 1,
+            "name": "systemd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.34,
+            "exe": "/usr/lib/systemd/systemd",
+            "command": "/usr/lib/systemd/systemd --system --deserialize=74"
+        },
+        {
+            "pid": 2,
+            "name": "kthreadd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 3,
+            "name": "pool_workqueue_release",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 4,
+            "name": "kworker/R-rcu_g",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 5,
+            "name": "kworker/R-rcu_p",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 6,
+            "name": "kworker/R-slub_",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 7,
+            "name": "kworker/R-netns",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 9,
+            "name": "kworker/0:0H-events_highpri",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 11,
+            "name": "kworker/u8:0-ext4-rsv-conversion",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 12,
+            "name": "kworker/R-mm_pe",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 13,
+            "name": "rcu_tasks_kthread",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 14,
+            "name": "rcu_tasks_rude_kthread",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 15,
+            "name": "rcu_tasks_trace_kthread",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 16,
+            "name": "ksoftirqd/0",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 17,
+            "name": "rcu_preempt",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 18,
+            "name": "migration/0",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 19,
+            "name": "idle_inject/0",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 20,
+            "name": "cpuhp/0",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 21,
+            "name": "cpuhp/1",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 22,
+            "name": "idle_inject/1",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 23,
+            "name": "migration/1",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 24,
+            "name": "ksoftirqd/1",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 26,
+            "name": "kworker/1:0H-events_highpri",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 27,
+            "name": "cpuhp/2",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 28,
+            "name": "idle_inject/2",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 29,
+            "name": "migration/2",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 30,
+            "name": "ksoftirqd/2",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 32,
+            "name": "kworker/2:0H-events_highpri",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 33,
+            "name": "cpuhp/3",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 34,
+            "name": "idle_inject/3",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 35,
+            "name": "migration/3",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 36,
+            "name": "ksoftirqd/3",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 38,
+            "name": "kworker/3:0H-events_highpri",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 43,
+            "name": "kdevtmpfs",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 44,
+            "name": "kworker/R-inet_",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 46,
+            "name": "kauditd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 47,
+            "name": "khungtaskd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 48,
+            "name": "oom_reaper",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 50,
+            "name": "kworker/R-write",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 51,
+            "name": "kcompactd0",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 52,
+            "name": "ksmd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 54,
+            "name": "khugepaged",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 55,
+            "name": "kworker/R-kinte",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 56,
+            "name": "kworker/R-kbloc",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 57,
+            "name": "kworker/R-blkcg",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 58,
+            "name": "irq/9-acpi",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 59,
+            "name": "kworker/R-tpm_d",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 60,
+            "name": "kworker/R-ata_s",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 61,
+            "name": "kworker/R-md",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 62,
+            "name": "kworker/R-md_bi",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 63,
+            "name": "kworker/R-edac-",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 64,
+            "name": "kworker/R-devfr",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 65,
+            "name": "watchdogd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 66,
+            "name": "kworker/1:1H-kblockd",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 68,
+            "name": "kswapd0",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 69,
+            "name": "ecryptfs-kthread",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 70,
+            "name": "kworker/R-kthro",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 71,
+            "name": "kworker/R-acpi_",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 73,
+            "name": "scsi_eh_0",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 74,
+            "name": "kworker/R-scsi_",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 75,
+            "name": "scsi_eh_1",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 76,
+            "name": "kworker/R-scsi_",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 79,
+            "name": "kworker/R-mld",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 80,
+            "name": "kworker/R-ipv6_",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 82,
+            "name": "kworker/3:1H-kblockd",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 88,
+            "name": "kworker/R-kstrp",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 93,
+            "name": "kworker/u13:0",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 94,
+            "name": "kworker/u14:0",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 95,
+            "name": "kworker/u15:0",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 96,
+            "name": "kworker/u16:0",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 97,
+            "name": "kworker/u17:0",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 102,
+            "name": "kworker/R-crypt",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 113,
+            "name": "kworker/R-charg",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 140,
+            "name": "kworker/2:1H-kblockd",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 141,
+            "name": "kworker/0:1H-kblockd",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 184,
+            "name": "hwrng",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 218,
+            "name": "kworker/R-raid5",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 255,
+            "name": "jbd2/vda1-8",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 256,
+            "name": "kworker/R-ext4-",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 367,
+            "name": "kworker/R-kmpat",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 368,
+            "name": "kworker/R-kmpat",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 486,
+            "name": "jbd2/vda16-8",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 487,
+            "name": "kworker/R-ext4-",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 842,
+            "name": "dbus-daemon",
+            "user": "messagebus",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.15,
+            "exe": "/usr/bin/dbus-daemon",
+            "command": "@dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only"
+        },
+        {
+            "pid": 854,
+            "name": "systemd-logind",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.22,
+            "exe": "/usr/lib/systemd/systemd-logind",
+            "command": "/usr/lib/systemd/systemd-logind"
+        },
+        {
+            "pid": 866,
+            "name": "kworker/u8:2-ext4-rsv-conversion",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 904,
+            "name": "agetty",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.05,
+            "exe": "/usr/sbin/agetty",
+            "command": "/sbin/agetty -o -p -- \\u --keep-baud 115200,57600,38400,9600 - vt220"
+        },
+        {
+            "pid": 916,
+            "name": "unattended-upgr",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.57,
+            "exe": "/usr/bin/python3.12",
+            "command": "/usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal"
+        },
+        {
+            "pid": 943,
+            "name": "agetty",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.05,
+            "exe": "/usr/sbin/agetty",
+            "command": "/sbin/agetty -o -p -- \\u --noclear - linux"
+        },
+        {
+            "pid": 1098,
+            "name": "systemd",
+            "user": "esec",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.27,
+            "exe": "/usr/lib/systemd/systemd",
+            "command": "/usr/lib/systemd/systemd --user --deserialize=24"
+        },
+        {
+            "pid": 1099,
+            "name": "(sd-pam)",
+            "user": "esec",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.09,
+            "exe": "/usr/lib/systemd/systemd-executor",
+            "command": "(sd-pam)"
+        },
+        {
+            "pid": 1250,
+            "name": "kworker/R-tls-s",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 2297,
+            "name": "yes",
+            "user": "root",
+            "status": "running",
+            "cpu_percent": 100.0,
+            "memory_percent": 0.04,
+            "exe": "/usr/bin/yes",
+            "command": "yes"
+        },
+        {
+            "pid": 6364,
+            "name": "kworker/0:1-events",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 18603,
+            "name": "cron",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.07,
+            "exe": "/usr/sbin/cron",
+            "command": "/usr/sbin/cron -f -P"
+        },
+        {
+            "pid": 30063,
+            "name": "multipathd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.68,
+            "exe": "/usr/sbin/multipathd",
+            "command": "/sbin/multipathd -d -s"
+        },
+        {
+            "pid": 41711,
+            "name": "rsyslogd",
+            "user": "syslog",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.13,
+            "exe": "/usr/sbin/rsyslogd",
+            "command": "/usr/sbin/rsyslogd -n -iNONE"
+        },
+        {
+            "pid": 43389,
+            "name": "systemd-networkd",
+            "user": "systemd-network",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.25,
+            "exe": "/usr/lib/systemd/systemd-networkd",
+            "command": "/usr/lib/systemd/systemd-networkd"
+        },
+        {
+            "pid": 43393,
+            "name": "systemd-resolved",
+            "user": "systemd-resolve",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.32,
+            "exe": "/usr/lib/systemd/systemd-resolved",
+            "command": "/usr/lib/systemd/systemd-resolved"
+        },
+        {
+            "pid": 43399,
+            "name": "systemd-timesyncd",
+            "user": "systemd-timesync",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.2,
+            "exe": "/usr/lib/systemd/systemd-timesyncd",
+            "command": "/usr/lib/systemd/systemd-timesyncd"
+        },
+        {
+            "pid": 43401,
+            "name": "systemd-udevd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.19,
+            "exe": "/usr/bin/udevadm",
+            "command": "/usr/lib/systemd/systemd-udevd"
+        },
+        {
+            "pid": 43403,
+            "name": "systemd-journald",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.46,
+            "exe": "/usr/lib/systemd/systemd-journald",
+            "command": "/usr/lib/systemd/systemd-journald"
+        },
+        {
+            "pid": 43405,
+            "name": "udisksd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.33,
+            "exe": "/usr/libexec/udisks2/udisksd",
+            "command": "/usr/libexec/udisks2/udisksd"
+        },
+        {
+            "pid": 43422,
+            "name": "psimon",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 44353,
+            "name": "polkitd",
+            "user": "polkitd",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.2,
+            "exe": "/usr/lib/polkit-1/polkitd",
+            "command": "/usr/lib/polkit-1/polkitd --no-debug"
+        },
+        {
+            "pid": 44366,
+            "name": "ModemManager",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.32,
+            "exe": "/usr/sbin/ModemManager",
+            "command": "/usr/sbin/ModemManager"
+        },
+        {
+            "pid": 46075,
+            "name": "kworker/0:0",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 70845,
+            "name": "python3",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.1,
+            "memory_percent": 0.79,
+            "exe": "/usr/bin/python3.12",
+            "command": "python3 agent.py"
+        },
+        {
+            "pid": 98077,
+            "name": "psimon",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 98569,
+            "name": "sshd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.21,
+            "exe": "/usr/sbin/sshd",
+            "command": "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+        },
+        {
+            "pid": 98570,
+            "name": "sshd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.26,
+            "exe": "/usr/sbin/sshd",
+            "command": "sshd: esec [priv]   "
+        },
+        {
+            "pid": 98670,
+            "name": "sshd",
+            "user": "esec",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.18,
+            "exe": "/usr/sbin/sshd",
+            "command": "sshd: esec@pts/1    "
+        },
+        {
+            "pid": 98673,
+            "name": "bash",
+            "user": "esec",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.13,
+            "exe": "/usr/bin/bash",
+            "command": "-bash"
+        },
+        {
+            "pid": 98721,
+            "name": "sshd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.27,
+            "exe": "/usr/sbin/sshd",
+            "command": "sshd: esec [priv]   "
+        },
+        {
+            "pid": 98778,
+            "name": "sshd",
+            "user": "esec",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.18,
+            "exe": "/usr/sbin/sshd",
+            "command": "sshd: esec@pts/2    "
+        },
+        {
+            "pid": 98779,
+            "name": "bash",
+            "user": "esec",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.13,
+            "exe": "/usr/bin/bash",
+            "command": "-bash"
+        },
+        {
+            "pid": 98788,
+            "name": "sudo",
+            "user": "esec",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.17,
+            "exe": "/usr/bin/sudo",
+            "command": "sudo su"
+        },
+        {
+            "pid": 98789,
+            "name": "sudo",
+            "user": "esec",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.06,
+            "exe": "/usr/bin/sudo",
+            "command": "sudo su"
+        },
+        {
+            "pid": 98790,
+            "name": "su",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.11,
+            "exe": "/usr/bin/su",
+            "command": "su"
+        },
+        {
+            "pid": 98791,
+            "name": "bash",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.11,
+            "exe": "/usr/bin/bash",
+            "command": "bash"
+        },
+        {
+            "pid": 109773,
+            "name": "sshd",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.27,
+            "exe": "/usr/sbin/sshd",
+            "command": "sshd: esec [priv]   "
+        },
+        {
+            "pid": 109873,
+            "name": "sshd",
+            "user": "esec",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.18,
+            "exe": "/usr/sbin/sshd",
+            "command": "sshd: esec@pts/4    "
+        },
+        {
+            "pid": 109876,
+            "name": "bash",
+            "user": "esec",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.14,
+            "exe": "/usr/bin/bash",
+            "command": "-bash"
+        },
+        {
+            "pid": 109939,
+            "name": "sudo",
+            "user": "esec",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.18,
+            "exe": "/usr/bin/sudo",
+            "command": "sudo su"
+        },
+        {
+            "pid": 109940,
+            "name": "sudo",
+            "user": "esec",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.06,
+            "exe": "/usr/bin/sudo",
+            "command": "sudo su"
+        },
+        {
+            "pid": 109941,
+            "name": "su",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.11,
+            "exe": "/usr/bin/su",
+            "command": "su"
+        },
+        {
+            "pid": 109942,
+            "name": "bash",
+            "user": "root",
+            "status": "sleeping",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.11,
+            "exe": "/usr/bin/bash",
+            "command": "bash"
+        },
+        {
+            "pid": 109964,
+            "name": "python3",
+            "user": "root",
+            "status": "running",
+            "cpu_percent": 0.2,
+            "memory_percent": 0.73,
+            "exe": "/usr/bin/python3.12",
+            "command": "python3 -m agent.py"
+        },
+        {
+            "pid": 115461,
+            "name": "kworker/u9:0-writeback",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 115583,
+            "name": "kworker/u9:1-writeback",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 115658,
+            "name": "kworker/u9:2-writeback",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 115788,
+            "name": "kworker/3:0-events",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 115821,
+            "name": "kworker/u11:1-events_unbound",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 115847,
+            "name": "kworker/3:2-cgroup_destroy",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116115,
+            "name": "kworker/u12:3-events_power_efficient",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116208,
+            "name": "kworker/2:1-cgroup_destroy",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116235,
+            "name": "kworker/u12:2-events_power_efficient",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116289,
+            "name": "kworker/u12:0-events_power_efficient",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116328,
+            "name": "kworker/2:0-events",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116521,
+            "name": "kworker/1:2-events",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116522,
+            "name": "kworker/u11:2-flush-253:0",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116525,
+            "name": "kworker/u10:0-events_power_efficient",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116554,
+            "name": "kworker/u10:3-events_power_efficient",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116558,
+            "name": "kworker/u11:0-events_unbound",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116575,
+            "name": "kworker/1:1",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116603,
+            "name": "kworker/u10:1-events_power_efficient",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        },
+        {
+            "pid": 116623,
+            "name": "kworker/3:1-events",
+            "user": "root",
+            "status": "idle",
+            "cpu_percent": 0.0,
+            "memory_percent": 0.0,
+            "exe": "",
+            "command": ""
+        }
+    ],
+    "ports": [
+        {
+            "protocol": "TCP",
+            "ip": "127.0.0.53",
+            "port": 53,
+            "pid": 43393,
+            "process": "systemd-resolved"
+        },
+        {
+            "protocol": "TCP",
+            "ip": "::",
+            "port": 22,
+            "pid": 98569,
+            "process": "sshd"
+        },
+        {
+            "protocol": "TCP",
+            "ip": "0.0.0.0",
+            "port": 22,
+            "pid": 98569,
+            "process": "sshd"
+        },
+        {
+            "protocol": "TCP",
+            "ip": "127.0.0.54",
+            "port": 53,
+            "pid": 43393,
+            "process": "systemd-resolved"
+        }
+    ],
+    "services": [
+        {
+            "service": "cron.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "dbus.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "getty@tty1.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "ModemManager.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "multipathd.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "polkit.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "rsyslog.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "serial-getty@ttyS0.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "ssh.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "systemd-journald.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "systemd-logind.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "systemd-networkd.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "systemd-resolved.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "systemd-timesyncd.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "systemd-udevd.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "udisks2.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "unattended-upgrades.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        },
+        {
+            "service": "user@1000.service",
+            "load": "loaded",
+            "active": "active",
+            "state": "running"
+        }
+    ],
+    "users": [
+        {
+            "user": "esec",
+            "terminal": "pts/1",
+            "host": "localhost",
+            "login_time": "2026-07-15 08:32:03"
+        },
+        {
+            "user": "esec",
+            "terminal": "pts/2",
+            "host": "localhost",
+            "login_time": "2026-07-15 08:34:48"
+        },
+        {
+            "user": "esec",
+            "terminal": "pts/3",
+            "host": "localhost",
+            "login_time": "2026-07-15 08:34:53"
+        },
+        {
+            "user": "esec",
+            "terminal": "pts/4",
+            "host": "localhost",
+            "login_time": "2026-07-17 04:14:38"
+        },
+        {
+            "user": "esec",
+            "terminal": "pts/5",
+            "host": "localhost",
+            "login_time": "2026-07-17 04:15:24"
+        }
+    ],
+    "memory": {
+        "total_gb": 3.82,
+        "used_gb": 0.27,
+        "available_gb": 3.21,
+        "usage_percent": 16.0
+    },
+    "disk": [
+        {
+            "device": "/dev/vda1",
+            "mount": "/",
+            "filesystem": "ext4",
+            "total_gb": 18.33,
+            "used_gb": 2.69,
+            "free_gb": 15.63,
+            "usage_percent": 14.7
+        },
+        {
+            "device": "/dev/vda16",
+            "mount": "/boot",
+            "filesystem": "ext4",
+            "total_gb": 0.86,
+            "used_gb": 0.11,
+            "free_gb": 0.69,
+            "usage_percent": 14.2
+        },
+        {
+            "device": "/dev/vda15",
+            "mount": "/boot/efi",
+            "filesystem": "vfat",
+            "total_gb": 0.1,
+            "used_gb": 0.01,
+            "free_gb": 0.1,
+            "usage_percent": 5.8
+        }
+    ]
+}

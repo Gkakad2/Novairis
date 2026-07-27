@@ -1,0 +1,10 @@
+{
+    "timestamp": "2026-07-25T06:16:36.482618+00:00",
+    "hostname": "novairis-client",
+    "rule_id": "DRIFT-PROCESSES",
+    "title": "New Process Detected",
+    "severity": "Medium",
+    "mitre": "Behavioral",
+    "category": "processes",
+    "evidence": "/bin/sh -e /usr/lib/update-notifier/update-motd-updates-available"
+}

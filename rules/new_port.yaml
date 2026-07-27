@@ -1,0 +1,16 @@
+id: DET-003
+
+title: Unauthorized Listening Port
+
+description: Detects newly opened listening TCP/UDP ports.
+
+severity: High
+
+mitre:
+  - T1046
+
+category: Discovery
+
+target: ports
+
+condition: added

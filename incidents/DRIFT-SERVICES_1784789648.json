@@ -1,0 +1,10 @@
+{
+    "timestamp": "2026-07-23T06:54:08.400139+00:00",
+    "hostname": "client",
+    "rule_id": "DRIFT-SERVICES",
+    "title": "New Service",
+    "severity": "High",
+    "mitre": "Behavioral",
+    "category": "services",
+    "evidence": "packagekit.service"
+}

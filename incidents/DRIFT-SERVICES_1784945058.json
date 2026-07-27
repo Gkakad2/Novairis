@@ -1,0 +1,10 @@
+{
+    "timestamp": "2026-07-25T02:04:18.654114+00:00",
+    "hostname": "novairis-client",
+    "rule_id": "DRIFT-SERVICES",
+    "title": "New Service",
+    "severity": "High",
+    "mitre": "Behavioral",
+    "category": "services",
+    "evidence": "systemd-timedated.service"
+}

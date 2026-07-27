@@ -1,0 +1,10 @@
+{
+    "timestamp": "2026-07-19T21:46:28.466941+00:00",
+    "hostname": "client",
+    "rule_id": "DRIFT-SERVICES",
+    "title": "New Service",
+    "severity": "High",
+    "mitre": "Behavioral",
+    "category": "services",
+    "evidence": "fwupd.service"
+}

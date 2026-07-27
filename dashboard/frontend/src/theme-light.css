@@ -1,0 +1,184 @@
+/*
+ * Light theme overrides. Scoped under html.theme-light so dark mode
+ * (the default) is completely untouched.
+ *
+ * Approach: the app is built almost entirely out of Tailwind's dark,
+ * translucent utility palette (white/black overlays at various
+ * opacities, slate-900/800/700, and a handful of hardcoded hex
+ * surface colors). Rather than special-casing individual components,
+ * this file re-maps every color "family" that appears anywhere in
+ * the codebase (checked against the full src/ tree) so nothing gets
+ * missed when new components are added on top of the same patterns.
+ *
+ * Coverage groups:
+ *   1. App shell / page background
+ *   2. Hardcoded hex surfaces (sidebar, header, dropdown panels)
+ *   3. surface-panel design system
+ *   4. Generic text utilities (slate scale + pure white)
+ *   5. Generic background utilities (slate scale, black/white overlays)
+ *   6. Generic border utilities (slate scale, black/white overlays,
+ *      including the `divide-*` combinator which needs its own
+ *      selector shape)
+ *   7. Status / accent color chips (emerald, rose, amber, cyan, etc.)
+ *      — text shades darkened so they stay readable on a light chip
+ *      background instead of the pale tone tuned for dark chips.
+ *   8. Form controls, scrollbars, focus rings
+ */
+
+html.theme-light {
+  color-scheme: light;
+}
+
+/* ---------- 1. App shell / page background ---------- */
+html.theme-light body,
+html.theme-light .app-shell {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* ---------- 2. Hardcoded hex surfaces ---------- */
+/* Sidebar + header background (bg-[#07111D]/NN) */
+html.theme-light [class*="bg-[#07111D]"] {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0;
+}
+/* Dropdown / popover panels (bg-[#0b1220]) */
+html.theme-light [class*="bg-[#0b1220]"] {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+}
+/* Misc dark fallback background */
+html.theme-light [class*="bg-[#020817]"] {
+  background-color: #f8fafc !important;
+}
+
+/* ---------- 3. surface-panel design system ---------- */
+html.theme-light .surface-panel {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+html.theme-light .surface-panel-soft {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+  color: #64748b;
+}
+
+/* headings / metrics */
+html.theme-light .font-display,
+html.theme-light .metric-value {
+  color: #0f172a;
+}
+
+/* ---------- 4. Generic text utilities ---------- */
+html.theme-light [class*="text-white"] { color: #0f172a; }
+html.theme-light [class*="text-slate-100"] { color: #1e293b; }
+html.theme-light [class*="text-slate-200"] { color: #1e293b; }
+html.theme-light [class*="text-slate-300"] { color: #334155; }
+html.theme-light [class*="text-slate-400"] { color: #64748b; }
+html.theme-light [class*="text-slate-500"] { color: #64748b; }
+/* slate-600 is used for the MOST muted text in dark mode (fine detail /
+   secondary captions) — it needs to stay muted-but-legible in light
+   mode too, not fade into the background. */
+html.theme-light [class*="text-slate-600"] { color: #94a3b8; }
+
+/* ---------- 5. Generic background utilities ---------- */
+html.theme-light [class*="bg-slate-900"] { background-color: #ffffff; }
+html.theme-light [class*="bg-slate-800"] { background-color: #f1f5f9; }
+html.theme-light [class*="bg-slate-700"] { background-color: #e2e8f0; }
+html.theme-light [class*="bg-slate-500"] { background-color: #cbd5e1; }
+
+/* subtle white-tint overlays (hover states, glows, chip fills) —
+   flip to a dark-on-light tint so hover/active states stay visible */
+html.theme-light [class*="bg-white/"] { background-color: rgba(15, 23, 42, 0.05); }
+/* black overlays used for inputs, badges, buttons on the dark shell —
+   these need to become visible, bordered light-gray surfaces */
+html.theme-light [class*="bg-black/"] {
+  background-color: #f1f5f9;
+}
+/* ...except bg-black/60, which is only ever used as a full-screen modal
+   backdrop scrim (LoginModal, AddHostModal) — that should stay a dark,
+   translucent dimming layer in both themes, not turn into a solid
+   light panel covering the screen. */
+html.theme-light [class*="bg-black/60"] {
+  background-color: rgba(15, 23, 42, 0.5);
+}
+
+/* ---------- 6. Generic border utilities ---------- */
+html.theme-light [class*="border-slate-700"] { border-color: #e2e8f0; }
+html.theme-light [class*="border-slate-800"] { border-color: #e2e8f0; }
+html.theme-light [class*="border-slate-600"] { border-color: #cbd5e1; }
+html.theme-light [class*="border-slate-500"] { border-color: #cbd5e1; }
+html.theme-light [class*="border-white/"] { border-color: #e2e8f0; }
+
+/* divide-* utilities apply their color via a child combinator that
+   Tailwind generates on the parent selector, not a plain border on
+   the element itself — has to be matched the same way here. */
+html.theme-light [class*="divide-white/"] > :not([hidden]) ~ :not([hidden]) {
+  border-color: #e2e8f0;
+}
+
+/* ---------- 7. Status / accent chips ---------- */
+/* Pale text tuned for dark chip backgrounds (200/300/400) needs to
+   darken by ~3-4 steps to stay readable once the chip fill becomes
+   a light tint instead of a dark one. This includes cyan — it's the
+   brand accent and reads fine on the dark shell, but cyan-300/400 on
+   a white/light-gray background has poor contrast, so it needs the
+   same treatment as every other status color. */
+html.theme-light [class*="text-cyan-200"],
+html.theme-light [class*="text-cyan-300"],
+html.theme-light [class*="text-cyan-400"] { color: #0e7490; }
+
+html.theme-light [class*="text-emerald-200"],
+html.theme-light [class*="text-emerald-300"],
+html.theme-light [class*="text-emerald-400"] { color: #047857; }
+
+html.theme-light [class*="text-rose-200"],
+html.theme-light [class*="text-rose-300"],
+html.theme-light [class*="text-rose-400"] { color: #be123c; }
+
+html.theme-light [class*="text-red-400"],
+html.theme-light [class*="text-red-300"] { color: #b91c1c; }
+
+html.theme-light [class*="text-amber-200"],
+html.theme-light [class*="text-amber-300"] { color: #b45309; }
+
+html.theme-light [class*="text-yellow-200"],
+html.theme-light [class*="text-yellow-400"] { color: #a16207; }
+
+html.theme-light [class*="text-orange-400"] { color: #c2410c; }
+
+html.theme-light [class*="text-violet-300"] { color: #6d28d9; }
+
+html.theme-light [class*="text-blue-400"] { color: #1d4ed8; }
+
+html.theme-light [class*="text-green-400"] { color: #15803d; }
+
+/* ---------- 8. Form controls, scrollbars, focus ---------- */
+html.theme-light input,
+html.theme-light select,
+html.theme-light textarea {
+  background-color: #ffffff;
+  border-color: #e2e8f0;
+  color: #0f172a;
+}
+
+html.theme-light input::placeholder,
+html.theme-light textarea::placeholder {
+  color: #94a3b8;
+}
+
+html.theme-light option {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+html.theme-light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+html.theme-light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}

@@ -1,0 +1,39 @@
+- id: DET-001
+  title: Netcat Reverse Shell
+  severity: Critical
+  mitre: T1059
+  category: Process
+  field: command
+  contains: "nc -"
+
+- id: DET-002
+  title: Python HTTP Server
+  severity: Medium
+  mitre: T1105
+  category: Process
+  field: command
+  contains: "http.server"
+
+- id: DET-003
+  title: Reverse Shell
+  severity: Critical
+  mitre: T1059
+  category: Process
+  field: command
+  contains: "/dev/tcp/"
+
+- id: DET-004
+  title: Wget Download
+  severity: High
+  mitre: T1105
+  category: Process
+  field: command
+  contains: "wget"
+
+- id: DET-005
+  title: Curl Download
+  severity: High
+  mitre: T1105
+  category: Process
+  field: command
+  contains: "curl"
