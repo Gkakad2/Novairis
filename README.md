@@ -60,7 +60,7 @@ Unlike traditional log viewers, NOVAIRIS focuses on behavioral monitoring, endpo
 ## Dashboard
 
 <p align="center">
-<img src="docs/screenshots/dashboard.png" width="90%">
+<img src="docs/screenshots/Homepage.png" width="90%">
 </p>
 
 ---
@@ -69,9 +69,7 @@ Unlike traditional log viewers, NOVAIRIS focuses on behavioral monitoring, endpo
 
 <p align="center">
 
-<img src="docs/screenshots/assets.png" width="48%">
-
-<img src="docs/screenshots/asset_details.png" width="48%">
+<img src="docs/screenshots/Assets.png" width="48%">
 
 </p>
 
@@ -81,9 +79,7 @@ Unlike traditional log viewers, NOVAIRIS focuses on behavioral monitoring, endpo
 
 <p align="center">
 
-<img src="docs/screenshots/incidents.png" width="48%">
-
-<img src="docs/screenshots/threat_feed.png" width="48%">
+<img src="docs/screenshots/Incidents.png" width="48%">
 
 </p>
 
@@ -93,9 +89,7 @@ Unlike traditional log viewers, NOVAIRIS focuses on behavioral monitoring, endpo
 
 <p align="center">
 
-<img src="docs/screenshots/threat_intelligence.png" width="48%">
-
-<img src="docs/screenshots/top_mitre.png" width="48%">
+<img src="docs/screenshots/Threat-Intel.png" width="48%">
 
 </p>
 
@@ -105,17 +99,17 @@ Unlike traditional log viewers, NOVAIRIS focuses on behavioral monitoring, endpo
 
 <p align="center">
 
-<img src="docs/screenshots/settings.png" width="90%">
+<img src="docs/screenshots/Settings.png" width="90%">
 
 </p>
 
 ---
 
-# Architecture
+# Light Mode
 
 <p align="center">
 
-<img src="docs/screenshots/architecture.png" width="90%">
+<img src="docs/screenshots/Light-Mode.png" width="90%">
 
 </p>
 
