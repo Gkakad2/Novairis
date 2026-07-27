@@ -308,17 +308,6 @@ http://localhost:5173
 - [x] Threat Intelligence
 - [x] MITRE ATT&CK Mapping
 - [x] Interactive Dashboard
-- [ ] Windows Endpoint Agent
-- [ ] YARA Rule Integration
-- [ ] Sigma Rule Support
-- [ ] IOC Feed Integration
-- [ ] CVE Intelligence
-- [ ] Email Notifications
-- [ ] PostgreSQL Support
-- [ ] Elasticsearch Integration
-- [ ] Docker Deployment
-- [ ] Kubernetes Deployment
-- [ ] AI Assisted Threat Hunting
 
 ---
 
