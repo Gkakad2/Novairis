@@ -1,32 +1,13 @@
-# Python
 venv/
 __pycache__/
 *.pyc
-*.pyo
-
-# Database
 *.db
 *.sqlite
 *.sqlite3
 
-# Logs
+logs/telemetry/
 *.log
 
-# Environment
-.env
-.env.*
+baseline/data/*.json
 
-# Node
-dashboard/frontend/node_modules/
-dashboard/frontend/dist/
-dashboard/frontend/.vite/
-
-# VS Code
 .vscode/
-
-# JetBrains
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
